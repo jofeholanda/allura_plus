@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap');
+
+:root {
+    --title-color: #FFFFFF;
+    --subtitle-color: #F9F9F9;
+    --small-text-color: #C0C0C0;
+    --button-color: #167BF7;
+    --background-color: #00030C;
+
+    --font-family: "Inter", sans-serif;
+    --bold-font-weight: 700;
+    --regular-font-weight: 400;
+}
+
+body {
+    background-color: var(--background-color);
+}
