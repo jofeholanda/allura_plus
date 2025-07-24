@@ -5,7 +5,9 @@
     --main-color: #FFFFFF;;
     --secondary-color: #C0C0C0;
     --accent-color: #167BF7;
-    --background-color: #00030C;
+    --accent-hover-color: #3C92fA;
+    --hollow-hover-color: rgba(255, 255, 255, 0.1);
+    --background-color: #00030c;
 
     --font-family: "Inter", sans-serif;
     --bold-font-weight: 700;
@@ -34,7 +36,6 @@ body {
 
 .container {
     height: 100vh;
-    width: 100vw;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -43,7 +44,7 @@ body {
     margin: 0em 6em;
 }
 
-.main__title {
+.main__content__title {
     font-weight: var(--bold-font-weight);
     font-size: 1.8rem;
 }
@@ -52,7 +53,7 @@ body {
     margin: 1em 0 2em 0;
 }
 
-.container__nav {
+.container__button {
     text-decoration: none;
     color: var(--main-color);
     display: block;
@@ -62,12 +63,108 @@ body {
     margin-bottom: 1em;
 }
 
+.container__button:hover {
+    background-color: var(--accent-hover-color);
+    color: var(--background-color);
+}
+
 .secondary_button {
     background-color: transparent;
     border: 1px solid var(--main-color);
+}
+
+.secondary_button:hover {
+    background-color: var(--hollow-hover-color);
+    color: var(--main-color);
 }
 
 .container__warning {
     color: var(--secondary-color);
     font-size: .75rem;
 }
+
+.secondary {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secondary__image {
+    width: 100%;
+}
+
+.description__title {
+    font-weight: var(--bold-font-weight);
+    font-size: 3rem;
+    margin-bottom: 0.1em;
+}
+
+.container__description {
+    padding: 2em;
+}
+
+.description__text {
+    color: var(--secondary-color);
+}
+
+.description__button {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.devices {
+    text-align: center;
+}
+
+.devices__title {
+    font-size: 3rem;
+}
+
+.devices__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.devices__list__label {
+    font-size: 2rem;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer__logo {
+    margin: 7em 0 3em 0;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.footer__list__link {
+    color: var(--font-family);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer__list__link:hover {
+    color: var(--secondary-color);
+}
+
+.footer__list__link:active {
+    text-decoration: underline;
+}
+
+.footer__text {
+    color: var(--secondary-color);
+    font-size: .875rem;
+    margin: 2em 6em;
+}
+
+
+
